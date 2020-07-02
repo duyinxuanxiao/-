@@ -1,0 +1,26 @@
+常用命令
+cd : 1 . cd name 2 . cd ..
+ls : 1. ls 2. ls -l 3. ls -lt
+mkdir : 1. mkdir name
+mv : 1. 文件名表示修改文件名 2. 目录名表示移动到目标目录 3. 目录名不存在则移动到存在的目录并修改文件名
+rm : 1. -r 可以删除目录 2. -f 强制删除不需要确认
+cp : 1. -rs可以复制目录 2. 操作类似rm
+tar : 1. zcvf 打包压缩 2.zxvf 解包解压缩
+clear : 清屏（终端）
+init 6 或者 reboot : 重启
+init 0 或者 halt : 关闭
+data : 1.cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime：设为上海时间 2. date -s "yyyy-mm-dd hh:mi:ss" 设定时间
+pwd : 查看当前工作目录
+* ，？ ： ‘ * ’ 匹配任意数量字符 ， ‘？’匹配一个字符
+ping : 1.ping -n 包的个数 ip地址或域名 (windows) 2.ping -c 包的个数 ip地址或域名(linux)
+cat, more, tail : 1. cat打开整个文件 2. more分页打开文件，空格下一页，b上一页，q退出 3. tail -f动态显示文件的最后几行
+wc : 显示文件的行数， 单词数，字节数
+grep : grep "内容" 文件名 , 在文件中搜索内容
+find : find 目录名 -name 文件名 -print, 搜索文件
+groupadd , groupdel : 后跟组名，增加删除用户组
+useradd -n 用户名 -g 组名 -d 用户的主目录 : 增加用户 userdel : 后跟用户名，删除用户
+passwd : 后跟用户名，修改密码
+su - root : 切换到root用户
+chown [-R] 用户名:组名 目录或文件名列表 ： 修改文件或目录的组和用户
+df [-h] [-T] ：选项-h 以方便阅读的方式显示信息。选项-T 列出文件系统类型。
+系统函数
