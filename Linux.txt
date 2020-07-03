@@ -9,7 +9,7 @@ tar : 1. zcvf 打包压缩 2.zxvf 解包解压缩
 clear : 清屏（终端）
 init 6 或者 reboot : 重启
 init 0 或者 halt : 关闭
-data : 1.cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime：设为上海时间 2. date -s "yyyy-mm-dd hh:mi:ss" 设定时间
+date : 1.cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime：设为上海时间 2. date -s "yyyy-mm-dd hh:mi:ss" 设定时间
 pwd : 查看当前工作目录
 * ，？ ： ‘ * ’ 匹配任意数量字符 ， ‘？’匹配一个字符
 ping : 1.ping -n 包的个数 ip地址或域名 (windows) 2.ping -c 包的个数 ip地址或域名(linux)
