@@ -36,3 +36,13 @@ struct option
 	int *flag;	   //指向整数，用于保存val值，设为NULL
 	int val;	   //选项短名称
 }
+
+int getopt_long( int argc, char * const * argv, const char * short_options, const struct option * long_options, int * long_index );
+函数返回值为参数短名称，不存在时返回-1如果为长选项，第五个参数输出该选项在长选项数组中的索引
+
+
+char *getenv(const char *name);
+搜索 name 所指向的环境字符串，并返回相关的值给字符串，该函数返回一个以 null 结尾的字符串，该字符串为被请求环境变量的值。如果该环境变量不存在，则返回 NULL。
+
+char* strerror(宏errno);
+返回宏errno对应的错误说明字符串。
