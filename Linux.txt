@@ -23,4 +23,17 @@ passwd : 后跟用户名，修改密码
 su - root : 切换到root用户
 chown [-R] 用户名:组名 目录或文件名列表 ： 修改文件或目录的组和用户
 df [-h] [-T] ：选项-h 以方便阅读的方式显示信息。选项-T 列出文件系统类型。
+
+
+
 系统函数
+
+#include <getopt>
+struct option
+{
+	const char *name;  //选项长名称
+	int has_arg;	   //选项是否具有附加参数。0：有，1：无，2：可选
+	int *flag;	   //指向整数，用于保存val值，设为NULL
+	int val;	   //选项短名称
+}
+
