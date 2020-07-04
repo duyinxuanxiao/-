@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ³£ÓÃÃüÁî
 cd : 1 . cd name 2 . cd ..
 ls : 1. ls 2. ls -l 3. ls -lt
